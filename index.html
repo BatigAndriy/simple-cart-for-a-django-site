@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Mega Menu | CodingNepal</title>
+    <link rel="stylesheet" href="basket.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7199f58f9c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main-basket-container">
+        <div class="second-basket-container">
+            <div class="container-for-basket">
+                 <h1 class="h-basket">Корзина</h1>
+                <div class="card-basket">
+                    <div class="card-body-basket">
+                        <h5 class="card-title-basket">Прекрасний букет</h5>
+                        <img src="1.jpg" class="card-img-top-basket" alt="...">
+                    </div>
+                    <div class="card-button">
+                        <a href="#" class="round-btn plus" data-product-id="{{ basket_item.product.id }}" data-product-price="{{ basket_item.product.price_numeric }}">+</a>
+                        <span class="text-muted-middle" id="text-muted-middle-{{ basket_item.product.id }}">1</span>
+                        <a href="#" class="round-btn minus" data-product-id="{{ basket_item.product.id }}" data-product-price="{{ basket_item.product.price_numeric }}">-</a>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item-basket">
+                            <span class="text-muted" id="text-simple-muted-middle-{{ basket_item.product.id }}">Кількість: 1 шт.</span>
+                        </li>
+                         <li class="list-group-item-basket">
+                             <span class="text-muted" id="product-price-first-{{ basket_item.product.id }}">1 </span>
+                             <span class="text-muted"> x 900 = </span>
+                             <span class="text-muted" id="product-price-second-{{ basket_item.product.id }}">900 грн</span>
+                        </li>
+                        <li class="list-group-item-basket">
+                            <a href="#">
+                                <i class="fa-solid fa-trash-alt"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="total-sum">
+                <p class="total_all" id="total-sum">Всього: 900 грн</p>
+            </div>
+            <div class="total-send">
+                <a href="#" class="a-total-basket">
+                         <span class="span-total-send">Сancel</span>
+                </a>
+                <a href="#" class="a-total-send">
+                         <span class="span-total-send">Order</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
