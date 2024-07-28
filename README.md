@@ -10,7 +10,7 @@
 Cart for a Django Site. Only Cart Design. Responsive, Simple, Without JS and Python Code
 
 ## Demo
-![-](busket_1.1.jpg)
+![-](busket_1.jpg)
 
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
