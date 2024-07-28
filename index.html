@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Mega Menu | CodingNepal</title>
+    <title>BASKET</title>
     <link rel="stylesheet" href="basket.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
@@ -14,25 +14,25 @@
     <div class="main-basket-container">
         <div class="second-basket-container">
             <div class="container-for-basket">
-                 <h1 class="h-basket">Корзина</h1>
+                 <h1 class="h-basket">Basket</h1>
                 <div class="card-basket">
                     <div class="card-body-basket">
-                        <h5 class="card-title-basket">Прекрасний букет</h5>
+                        <h5 class="card-title-basket">Beautiful Bouquet</h5>
                         <img src="1.jpg" class="card-img-top-basket" alt="...">
                     </div>
                     <div class="card-button">
                         <a href="#" class="round-btn plus" data-product-id="{{ basket_item.product.id }}" data-product-price="{{ basket_item.product.price_numeric }}">+</a>
-                        <span class="text-muted-middle" id="text-muted-middle-{{ basket_item.product.id }}">1</span>
+                        <span class="text-muted-middle" id="text-muted-middle">1</span>
                         <a href="#" class="round-btn minus" data-product-id="{{ basket_item.product.id }}" data-product-price="{{ basket_item.product.price_numeric }}">-</a>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item-basket">
-                            <span class="text-muted" id="text-simple-muted-middle-{{ basket_item.product.id }}">Кількість: 1 шт.</span>
+                            <span class="text-muted" id="text-simple-muted-middle">Quantity: 1 pc</span>
                         </li>
                          <li class="list-group-item-basket">
-                             <span class="text-muted" id="product-price-first-{{ basket_item.product.id }}">1 </span>
+                             <span class="text-muted" id="product-price-first">1 </span>
                              <span class="text-muted"> x 900 = </span>
-                             <span class="text-muted" id="product-price-second-{{ basket_item.product.id }}">900 грн</span>
+                             <span class="text-muted" id="product-price-second">900 UAH</span>
                         </li>
                         <li class="list-group-item-basket">
                             <a href="#">
@@ -42,17 +42,18 @@
                 </div>
             </div>
             <div class="total-sum">
-                <p class="total_all" id="total-sum">Всього: 900 грн</p>
+                <p class="total_all" id="total-sum">Total: 900 UAH</p>
             </div>
             <div class="total-send">
                 <a href="#" class="a-total-basket">
-                         <span class="span-total-send">Сancel</span>
+                    <span class="span-total-send">Cancel</span>
                 </a>
                 <a href="#" class="a-total-send">
-                         <span class="span-total-send">Order</span>
+                    <span class="span-total-send">Order</span>
                 </a>
             </div>
         </div>
     </div>
 </body>
+
 </html>
